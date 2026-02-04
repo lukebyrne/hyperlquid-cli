@@ -4,6 +4,14 @@ version = "0.0.5"
 edition = "2024"
 default-run = "rhl"
 autobins = false
+description = "CLI for Hyperliquid DEX (1:1 Rust port of the hyperliquid-cli npm package)"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/lukebyrne/hyperlquid-cli"
+homepage = "https://github.com/lukebyrne/hyperlquid-cli"
+keywords = ["hyperliquid", "dex", "cli", "trading"]
+categories = ["command-line-utilities"]
+rust-version = "1.85"
 
 [dependencies]
 anyhow = "1.0.97"

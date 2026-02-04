@@ -14,7 +14,7 @@ Prereqs:
 - Linux only: you may need OpenSSL + `pkg-config` (for `native-tls`)
 
 ```bash
-cargo install --path .
+cargo install hyperliquid-cli
 ```
 
 This installs two binaries:
@@ -22,10 +22,16 @@ This installs two binaries:
 - `rhl`
 - `rhl-server`
 
-Install from Git (after you push this repo somewhere):
+Install from Git:
 
 ```bash
 cargo install --git <REPO_URL> --locked
+```
+
+Install from this repo (local):
+
+```bash
+cargo install --path .
 ```
 
 If `rhl` isn’t found after installing, make sure `~/.cargo/bin` is on your `PATH`.
