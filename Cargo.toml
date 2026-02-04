@@ -1,0 +1,37 @@
+[package]
+name = "hyperliquid-cli"
+version = "0.0.5"
+edition = "2024"
+default-run = "rhl"
+autobins = false
+
+[dependencies]
+anyhow = "1.0.97"
+chrono = { version = "0.4.40", default-features = false, features = ["clock", "serde"] }
+clap = { version = "4.5.31", features = ["derive"] }
+comfy-table = "7.1.4"
+crossterm = "0.28.1"
+daemonize = "0.5.0"
+directories = "6.0.0"
+ethers = "2.0.14"
+futures-util = "0.3.30"
+hyperliquid = "0.2.4"
+inquire = "0.7.5"
+owo-colors = "4.2.0"
+reqwest = { version = "0.12.12", default-features = false, features = ["json", "rustls-tls"] }
+rusqlite = { version = "0.34.0", features = ["bundled"] }
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = { version = "1.0.138", features = ["preserve_order"] }
+tokio = { version = "1.43.0", features = ["fs", "io-util", "macros", "net", "rt-multi-thread", "signal", "sync", "time"] }
+tokio-tungstenite = { version = "0.23.1", features = ["native-tls"] }
+
+[dev-dependencies]
+tempfile = "3.17.1"
+
+[[bin]]
+name = "rhl"
+path = "src/bin/hl.rs"
+
+[[bin]]
+name = "rhl-server"
+path = "src/bin/hl-server.rs"
