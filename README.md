@@ -1,6 +1,6 @@
 # Hyperliquid CLI (Rust)
 
-A command-line interface for [Hyperliquid DEX](https://hyperliquid.xyz/) — Rust port of the `hyperliquid-cli` npm package.
+A command-line interface for [Hyperliquid DEX](https://hyperliquid.xyz/) — a direct 1:1 Rust port of the npm package [`hyperliquid-cli`](https://www.npmjs.com/package/hyperliquid-cli).
 
 Features a beautiful terminal UI with real-time watch modes and an optional background caching server.
 
